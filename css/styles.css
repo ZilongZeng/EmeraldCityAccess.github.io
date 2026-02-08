@@ -1,60 +1,70 @@
-body{
-    margin:0;
-    padding:0;
+html, body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 16px;
+    font-family: "Inter";
+    color: #117a40;
+    background-color: #fffffc;
 } 
 
-html{
-    margin:0;
-    padding:0;
-    font-family: sans-serif, Arial, Helvetica;
-    background-color: white;
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
 }
 
 .title {
-    margin:0;
-    padding: 10px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.4); /* black at 40% opacity */
-    color: white;
-
+    margin: 0;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 0.8;
 }
 
-.seattle-skyline {
-    width: 100vw;
-    height: 50vh;
-    background: #D0E4F5 url("../images/Seattle_skyline.jpeg") no-repeat scroll 0% 0%;
-    background-size:cover;
-    background-position: center;
-    filter: brightness(80%) saturate(60%);
+.subtitle {
+    font-weight: 200;
+    font-size: 1.5rem;
 }
 
-p {
-    font-size: large;
-}
-
-.report1text{
-    text-align: left;
-}
-
-.report2title, .report2text{
-    text-align: right;
-}
-
-.report3text{
-    text-align: left;
-}
-
-.report-wrapper {
-    margin:0px;
-    padding: 15px;
+.main {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 5%;
 }
 
 .report-container {
-    border: solid black 1px;
-    padding: 20px;
-    margin: 20px;
+    display: flex;
+    align-items: stretch;
+    gap: 200px;
+    margin: 100px 0 300px 0;
 }
 
-.ConclusionTitle{
-    padding:35px;
+.report-content {
+    flex: 1;
+    max-width: 40%;
 }
+
+.report-content h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    min-width: 20ch;
+}
+
+.report-text {
+    font-size: 1.125rem;
+    max-width: 60ch;
+}
+
+.report-data {
+    flex: 2;
+}
+
+.tableauPlaceholder {
+    width: 100%;
+    max-height: 600px;
+}
+
+
