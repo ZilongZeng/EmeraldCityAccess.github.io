@@ -107,4 +107,9 @@ p {
     margin-bottom: 500px;
 }
 
+.report-findings p {
+    max-width: 800px;
+    text-align: left;
+}
+
 
