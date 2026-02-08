@@ -21,7 +21,7 @@
 
       <div class="report-process">
         <h1 class="report-heading">Our Process</h1>
-        <p class="report-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacus sit amet libero consequat tincidunt. Cras euismod, ligula ac ultricies pharetra, metus nunc pharetra est, a interdum lacus lectus a nibh.</p>
+        <p class="report-text">We primarily worked with the Project Sidewalk Seattle Accessibility dataset, making sure to remove redundant columns such as the “Type”, “Geometry”, and “Is Temporary” columns in our preprocessing. We worked on our project in Tableau, creating data visualization on the maps as well as publishing our work through GitHub Pages. Throughout this process, we used online resources to create and visualize Geojsons of Seattle neighborhood boundaries, as well as additional data sources such as race and ethnicity demographic data sets. </p>
       </div>
 
       <div class="report-container" id="report-one">
@@ -29,8 +29,9 @@
 
         <div class="report-content"> 
           <h1 class="report-heading">Accessibility Infrastructure</h1>
-          <p class="report-text">however... we noticed there was a lack of accessibiltiy data in certain regions, particularly those in underrepresented areas of seattle. either a pattern or a lack of data.</p>
-        </div>
+          <p class="report-text">The Project Sidewalk Seattle Accessibility dataset published back in 2021 displays many of the different kinds of geo-located accessibility features and issues present in the Seattle area. There are entries that show the location of accessible curb ramps but also entries that map locations without curb ramps, have an obstacle, or don’t have sidewalks. </p>
+          <br></br>
+          <p class="report-text">What really caught our attention is the sparsity of data in some neighborhood regions, with lots of data clustered around Northern and Central Seattle but with less data in South Seattle. This would either indicate that there really are less accessibility issues in South Seattle compared to other regions of Seattle or that there is a lack of data collected from the South Seattle region. We hypothesised that this potential lack of data may be connected to regions where there are large groups of minorities or underrepresented communities.</p>        </div>
 
         <div class="report-data">
           <div class='tableauPlaceholder' id='viz1770562843076' style='position: relative'><noscript><a href='#'><img alt='Accessibility Infrastructure Map ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;B2&#47;B2DC72CFB&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;AccessibilityMap_17705564766060&#47;Sheet14?:language=en-US&amp;:embed=true&amp;:sid=&amp;:redirect=auth' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;B2&#47;B2DC72CFB&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1770562843076');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
@@ -44,7 +45,13 @@
       <div class="report-container">
         <div class="report-content-two" id="report-two-content"> 
           <h1 class="report-heading">Neighborhood Representation</h1>
-          <p class="report-text">after looking at the neighborhoods in the dataset, we noticed not every neighborhood is represented in the data. a lot of niehgborhoods are aggregated into larger groups. for example, looking at mount baker, it basically combined every neighborhood in south seattle. its also missing a lot of data points (something idk)   </p>
+          <p class="report-text">We wanted to visualize the distribution of data across Seattle neighborhoods and noticed that many data points in some regions have been generalized to broad areas such as North Beacon Hill, Mount Baker, or the Industrial District.
+            To explore this in more detail, we compared this data with the Neighborhood Map Atlas from Seattle Geodata, which shows the detailed borders of every neighborhood in Seattle. This comparison revealed that labels in the Project Sidewalk dataset, particularly for West Seattle and South Seattle, are significant generalizations of the actual neighborhoods in those areas. 
+          </p>
+          <br></br>
+          <p class="report-text">The neighborhoods with the largest number of data entries are the Industrial District (11.4k.), Ravenna (5.2k),Mount Baker (4.9k), and North Beacon Hill (4.1k). Three out of the top 4 are located in typically underrepresented communities and should not have any factors which would prevent it from being properly labeled. </p>
+          <br></br>
+        <p class="report-text">We felt that some of the data entries should not be considered as part of the Mount Baker neighborhood and have been generalized. This could indicate that since there was a lack in proper partitioning of the data points, there may even be a lack of data collection in these underrepresented communities.</p>
         </div>
       </div>
 
@@ -142,15 +149,20 @@
         </div>
 
         <div class="report-content"> 
-          <h1 class="report-heading">Report 3</h1>
-          <p class="report-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacus sit amet libero consequat tincidunt. Cras euismod, ligula ac ultricies pharetra, metus nunc pharetra est, a interdum lacus lectus a nibh.</p>
+          <h1 class="report-heading">Neighborhood Demographics</h1>
+          <p class="report-text">We explored the race and ethnicity of Seattle neighborhoods dataset published by Seattle Geodata to see the demographics of each neighborhood. 
+        This visualization displays the percentage of the neighborhood population that are people of color, and while it is not exhaustive for all neighborhoods, we can get a general idea of which regions have a higher PoC percentage which are often underrepresented regions with less resources. From the data, we can see that those same areas that were generalized are from underrepresented communities (West Seattle and South Seattle). 
+        </p>
         </div>
 
       </div>
 
       <div class="report-findings">
         <h1 class="report-heading">Findings</h1>
-        <p class="report-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacus sit amet libero consequat tincidunt. Cras euismod, ligula ac ultricies pharetra, metus nunc pharetra est, a interdum lacus lectus a nibh.</p>
+        <p class="report-text">Our initial analysis on the map led us to question the sparsity of data in the South Seattle region and how representative the Project Sidewalk Seattle’s data set truly was. </p>
+        <p class="report-text">Through further exploration through different data sources, we looked at the distribution of the data throughout each neighborhood and discovered that some data entries were generalized to certain neighborhoods that might not actually be representative of their actual location.</p>
+        <p class="report-text">It appeared that certain regions have done this vast generalization of data entries to a single neighborhood despite there being other defined neighborhoods that can be used to label it instead. This may suggest that there has not been as much consideration for data quality and exploration in these areas if it has been so generalized. </p>
+        <p class="report-text">Exploring the race and ethnicity demographics of Seattle neighborhoods and checking it with our other data visualizations, we conclude that there may be a lack of proper representation and potentially missing data in these underrepresented regions.</p>
       </div>
 
 </div>
