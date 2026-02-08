@@ -1,0 +1,60 @@
+body{
+    margin:0;
+    padding:0;
+} 
+
+html{
+    margin:0;
+    padding:0;
+    font-family: sans-serif, Arial, Helvetica;
+    background-color: white;
+}
+
+.title {
+    margin:0;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4); /* black at 40% opacity */
+    color: white;
+
+}
+
+.seattle-skyline {
+    width: 100vw;
+    height: 50vh;
+    background: #D0E4F5 url("../images/Seattle_skyline.jpeg") no-repeat scroll 0% 0%;
+    background-size:cover;
+    background-position: center;
+    filter: brightness(80%) saturate(60%);
+}
+
+p {
+    font-size: large;
+}
+
+.report1text{
+    text-align: left;
+}
+
+.report2title, .report2text{
+    text-align: right;
+}
+
+.report3text{
+    text-align: left;
+}
+
+.report-wrapper {
+    margin:0px;
+    padding: 15px;
+}
+
+.report-container {
+    border: solid black 1px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.ConclusionTitle{
+    padding:35px;
+}
